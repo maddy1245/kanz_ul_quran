@@ -16,7 +16,6 @@ class SurahDetail extends StatefulWidget {
 
 class _SurahDetailState extends State<SurahDetail> {
   ApiServices apiServices = ApiServices();
-  //SolidController _controller =  SolidController();
   Translation? translation = Translation.urdu;
 
   @override
@@ -115,30 +114,5 @@ class _SurahDetailState extends State<SurahDetail> {
         ),
       ),
     );
-
-    // return Scaffold(
-    //   body: FutureBuilder(
-    //     future: apiServices.getTranslation(Constants.surahIndex!),
-    //     builder: (BuildContext context, AsyncSnapshot<SurahTranslationList> snapshot) {
-    //       if (snapshot.connectionState == ConnectionState.waiting) {
-    //         return const Center(child: CircularProgressIndicator());
-    //       } else if (snapshot.hasData) {
-    //         return ListView.builder(
-    //           itemCount: snapshot.data!.translationslist.length,
-    //           itemBuilder: (context, index) {
-    //             return TranslationTile(
-    //               surahTranslation: snapshot.data!.translationslist[index],
-    //               index: index,
-    //             );
-    //           },
-    //         );
-    //       } else {
-    //         return const Center(
-    //           child: Text('Translation not found'),
-    //         );
-    //       }
-    //     },
-    //   ),
-    // );
   }
 }
