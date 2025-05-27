@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Constants.kSwatchColor,
         fontFamily: 'Poppins',
-      ),  
+      ),
       home: const SplashScreen(),
       routes: {
-       JuzScreen.id: (context) => JuzScreen(), 
-       SurahDetail.id: (context) => SurahDetail(),
+        JuzScreen.id: (context) => JuzScreen(),
+        SurahDetail.id: (context) => SurahDetail(),
       },
     );
   }
